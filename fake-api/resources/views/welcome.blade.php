@@ -9,12 +9,12 @@
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    {{-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
-    </script> --}}
+    </script>
 
     {{-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> --}}
 
@@ -66,6 +66,17 @@
         <a href="https://fontmeme.com/pt/fonte-de-pokemon/"><img src="https://fontmeme.com/permalink/230126/af0cca64561d561530179da19df00134.png" alt="fonte-de-pokemon" border="0"></a>
     </div>
     <br>
+
+    <div class="center">
+        <form action=" " method="GET">
+            <label for="busca">Search</label>
+            <input type="text" id="busca" name="q">
+            <button type="submit">OK</button>
+          </form>
+    </div>
+
+    <br>
+
 
     <div class="align">
         @foreach ($pokemons -> pokemon as $postar)
